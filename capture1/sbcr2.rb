@@ -1,5 +1,7 @@
 # coding: utf-8
 require 'cgi'
+require 'open-uri'
+require 'kconv'
 
 def parse(page_source)
   dates = page_source.scan(%r!(\d+)年 ?(\d+)月 ?(\d+)日<br />!)
@@ -21,4 +23,4 @@ end
 
 puts format_text("WWW.SBCR.JP トピックス",
                  "http://crawler.sbcr.jp/samplepage.html",
-                 parse(`/usr/local/bin/wget -q -O- http://crawler.sbcr.jp/samplepage.html`))
+                 parse(open("http://crawler.sbcr.jp/samplepage.html", &:read).toutf8))
