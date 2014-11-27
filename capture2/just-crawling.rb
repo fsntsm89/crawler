@@ -2,10 +2,10 @@
 require 'anemone'
 
 # クロールの起点となるURLを指定
-urls = ["http://amazon.co.jp/gp/bestsellers/books/",
-       "http://amazon.co.jp/gp/bestsellers/digital-text/2275256051/"]
+urls = ["http://www.amazon.co.jp/gp/bestsellers/books/",
+        "http://www.amazon.co.jp/gp/bestsellers/digital-text/2275256051/"]
 
-Anemone.crawl(urls, :depth_limit => 2,
+Anemone.crawl(urls, :depth_limit => 1,
               :skip_query_strings => true) do |anemone|
   # 巡回先の絞込
   anemone.focus_crawl do |page|
