@@ -2,3 +2,5 @@
 localhost:7777
 .DS_Store
 .bundle
+config.yml
+screenshot/
