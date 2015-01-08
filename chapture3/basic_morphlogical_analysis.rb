@@ -2,7 +2,11 @@
 require 'open-uri'
 require 'rexml/document'
 
-APPLICATION_ID = 'YAHOO_API_KEY'
+# configファイルの読み込み
+require 'yaml'
+@@config = YAML.load_file("../config.yml")
+
+APPLICATION_ID = @@config["yahoo"]["api_key"]
 BASE_URL = 'http://jlp.yahooapis.jp/MAService/V1/parse'
 
 def request(text)
