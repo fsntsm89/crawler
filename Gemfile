@@ -7,3 +7,5 @@ gem 'poltergeist'
 gem 'selenium-webdriver'
 
 gem 'autopagerize'
+
+gem 'sqlite3'
