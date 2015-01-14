@@ -4,3 +4,4 @@ localhost:7777
 .bundle
 config.yml
 screenshot/
+*.txt
