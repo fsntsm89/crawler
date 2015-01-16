@@ -9,6 +9,9 @@ GEM
       addressable
       httpclient
       nokogiri
+    bson (1.11.1)
+    bson_ext (1.11.1)
+      bson (~> 1.11.1)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -22,6 +25,8 @@ GEM
     httpclient (2.6.0.1)
     mime-types (2.4.3)
     mini_portile (0.6.2)
+    mongo (1.11.1)
+      bson (= 1.11.1)
     multi_json (1.10.1)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
@@ -54,6 +59,8 @@ PLATFORMS
 DEPENDENCIES
   anemone
   autopagerize
+  bson_ext
+  mongo
   poltergeist
   selenium-webdriver
   sqlite3

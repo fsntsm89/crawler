@@ -9,3 +9,5 @@ gem 'selenium-webdriver'
 gem 'autopagerize'
 
 gem 'sqlite3'
+gem 'mongo'
+gem 'bson_ext'
