@@ -6,3 +6,5 @@ config.yml
 screenshot/
 *.txt
 *.db
+files/
+parsed/
