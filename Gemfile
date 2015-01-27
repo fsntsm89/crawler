@@ -11,3 +11,5 @@ gem 'autopagerize'
 gem 'sqlite3'
 gem 'mongo'
 gem 'bson_ext'
+
+gem 'parallel'
