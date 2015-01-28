@@ -13,3 +13,5 @@ gem 'mongo'
 gem 'bson_ext'
 
 gem 'parallel'
+
+gem 'amazon-ecs'
