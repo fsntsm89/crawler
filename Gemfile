@@ -15,3 +15,5 @@ gem 'bson_ext'
 gem 'parallel'
 
 gem 'amazon-ecs'
+
+gem 'google-search'

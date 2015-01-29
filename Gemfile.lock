@@ -25,7 +25,10 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     cliver (0.3.2)
     ffi (1.9.6)
+    google-search (1.0.3)
+      json
     httpclient (2.6.0.1)
+    json (1.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     mongo (1.11.1)
@@ -66,6 +69,7 @@ DEPENDENCIES
   anemone
   autopagerize
   bson_ext
+  google-search
   mongo
   parallel
   poltergeist
